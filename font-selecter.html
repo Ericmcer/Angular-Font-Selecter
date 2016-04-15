@@ -1,0 +1,14 @@
+<link ng-repeat="font in importFonts" href='http:
+//fonts.googleapis.com/css?family={{importFont}}' rel='stylesheet' type='text/css'>
+
+<div ng-style="wrapperStyle" style="width:100%">
+	<div style="width:50%;text-align:center">
+		<select  ng-style="selectStyle" ng-model="fontSelected">
+			<option ng-repeat="font in fonts" value="font"></option>
+		</select>
+	</div>
+	<div style="width:50%;text-align:center">
+		<p ng-style="{'font-family':{{font}}}">This is the new font you have selected.<br>
+		Zoo, Tiger, Xylophone, other weird words.</p>
+	</div>
+</div>
